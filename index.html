@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        body{
+            background-color: grey;
+            margin-top: 30px;
+        }
+        table{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: black;
+            color: whitesmoke;
+            border-collapse: collapse;
+            margin: 100px 0;
+            width: 500px;
+            margin-right: 10px;
+        }
+        th{
+            width: 350px;
+        }
+        input{
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        button{
+            width: 100px;
+            border-radius: 10px;
+            height: 30px;
+            margin-top: 10px;
+        }
+        h1{
+            color: rgb(8, 8, 75);
+            margin-right: 130px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Submission</h1>
+    <b>First Name:</b><br/><br/>
+    <input type="text" name="fname" id="fname" placeholder='First Name' /><br/><br/>
+    <b>Last Name:</b><br/><br/>
+    <input type="text" name="lname" id="lname" placeholder='Last Name' /><br/><br/>
+    <b>Address Line 1:</b><br/><br/>
+    <input type="text" name="add1" id="add1" placeholder='Address Line 1' /><br/><br/>
+    <b>Address Line 2:</b><br/><br/>
+    <input type="text" name="add2" id="add2" placeholder='Address Line 2' /><br/><br/>
+    <b>PIN:</b><br/><br/>
+    <input type="number" name="pin" id="pin" placeholder='Pincode' /><br/><br/>
+    <b>Gender:</b><br/><br/>
+    <input type="radio" name="gen" id="gen" value='Male'/>Male<br/><br/>
+    <input type="radio" name="gen" id="gen" value='Female'/>Female<br/><br/>
+    <b>Choice of Food: (must select at least 2 out of 5 options)</b><br/><br/>
+    <input type="checkbox" name="f2" id="f1" value='North Indian'/>North Indian<br/><br/>
+    <input type="checkbox" name="f3" id="f1" value='South Indian' />South Indian<br/><br/>
+    <input type="checkbox" name="f4" id="f1" value='Chinese'/>Chinese<br/><br/>
+    <input type="checkbox" name="f5" id="f1" value='Japanese'/>Japanese<br/><br/>
+    <input type="checkbox" name="f5" id="f1" value='Sea Food'/>Sea Food<br/><br/>
+    <b>State:</b><br/><br/>
+    <input type="text" name="state" id="state" placeholder='State' /><br/><br/>
+    <b>Country:</b><br/><br/>
+    <input type="text" name="country" id="country" placeholder='Country' /><br/><br/>
+    <button onclick="addRow();">Submit</button>
+    <h1 style="position:absolute; top:0; right:0;">Temporary Database</h1>
+    <table border="5">
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Address1</td>
+            <td>Address2</td>
+            <td>Pincode</td>
+            <td>Gender</td>
+            <td>Food</td>
+            <td>State</td>
+            <td>Country</td>
+        </tr>
+        <tr>
+            <td>Diya</td>
+            <td>Murugados</td>
+            <td>Madurai</td>
+            <td>Melur</td>
+            <td>456779</td>
+            <td>Female</td>
+            <td>North Indian,South Indian</td>
+            <td>Tamilnadu</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Pavithra</td>
+            <td>Krishnakumar</td>
+            <td>Ooty</td>
+            <td>Gudalor</td>
+            <td>456678</td>
+            <td>Female</td>
+            <td>North Indian,South Indian</td>
+            <td>Tamilnadu</td>
+            <td>India</td>
+        </tr>
+    </table>
+</body>
+</html>
